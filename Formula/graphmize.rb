@@ -5,20 +5,20 @@
 class Graphmize < Formula
   desc "Graphmize is a tool to visualize the dependencies of kustomize."
   homepage "https://github.com/hourglasshoro/graphmize"
-  version "0.0.1"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hourglasshoro/graphmize/releases/download/v0.0.1/graphmize_0.0.1_Darwin_x86_64.tar.gz"
-    sha256 "90706e0cbb2fb7ecc4129caaa7dfe63f83afac91847df1afdecd781d4e6a58c7"
+    url "https://github.com/hourglasshoro/graphmize/releases/download/v0.1.1/graphmize_0.1.1_Darwin_x86_64.tar.gz"
+    sha256 "5ca159b32e251b7878ca7aeec249fe8cfd18f90b46c92d5aadfbbcb6a1351023"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hourglasshoro/graphmize/releases/download/v0.0.1/graphmize_0.0.1_Linux_x86_64.tar.gz"
-    sha256 "8c123ceee98b3db93cfd6dac5b53cecfe54a57032ba5b8041b0ef372101473ec"
+    url "https://github.com/hourglasshoro/graphmize/releases/download/v0.1.1/graphmize_0.1.1_Linux_x86_64.tar.gz"
+    sha256 "274a3ad183df4fcbae9f4d3154c99425bbb429f1dff7c39a3c2831b361cbdf03"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/hourglasshoro/graphmize/releases/download/v0.0.1/graphmize_0.0.1_Linux_arm64.tar.gz"
-    sha256 "23ea5f102e4f053c9a04d6be01bb4a257dcb073ed48759d0eaddcb75f94e9001"
+    url "https://github.com/hourglasshoro/graphmize/releases/download/v0.1.1/graphmize_0.1.1_Linux_arm64.tar.gz"
+    sha256 "16aa0a779d743dbc90067271674b2661279b81ced771672ecf18f0d49e0cbc88"
   end
 
   def install
